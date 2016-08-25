@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>range</title>
+</head>
+<body>
+<script type="text/javascript">
+
+	function range(start , end, step){
+		var array =[];  // declare an empty array
+		if(step == null){
+			step=1;
+		}
+		for(var i = start; i<= end; i=i+step){ //  loop through from start to end
+			array.push(i); 
+		}
+      return array;
+	}
+	document.write(range(1,10,2));
+</script>
+</body>
+</html>
